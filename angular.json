@@ -24,9 +24,22 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/assets/sb-ui-kit/css/styles.css",
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/lity/dist/lity.css",
+              "node_modules/aos/dist/aos.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/feather-icons/dist/feather.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/all.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/sb-ui-kit/js/scripts.js",
+              "node_modules/lity/dist/lity.js",
+              "node_modules/aos/dist/aos.js",
+              "src/scripts.js"
+            ]
           },
           "configurations": {
             "production": {
