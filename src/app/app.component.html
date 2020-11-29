@@ -4,7 +4,7 @@
     <main>
       <nav class="navbar navbar-default navbar-expand-lg bg-dark navbar-dark fixed-top" style='opacity: 90%;'>
         <div class="container">
-          <a class="navbar-brand text-white" href="index.html">Auto-Starck</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
+          <a class="navbar-brand text-white" href="index.html">{{companyService.companyData?.name}}</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i data-feather="menu"></i></button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mr-lg-5">
               <li class="nav-item"><a class="nav-link" href="index.html">Startseite </a></li>
@@ -19,7 +19,7 @@
             <div class="row justify-content-center">
               <div class="col-xl-8 col-lg-10 text-center">
                 <div data-aos="fade-up" class="aos-init aos-animate">
-                  <h1 class="page-header-title">Auto-Starck</h1>
+                  <h1 class="page-header-title">{{companyService.companyData?.name}}</h1>
                   <p class="page-header-text">Willkommen bei Ihrer Autowerkstatt in Hofheim!</p>
                   <!--<p class="page-header-text">KFZ-Werkstatt, Wartung, Unfallreparatur, TüV, Reifendienst, Inspektionsservice für Fahrzeuge aller Art und Großreifenreparatur. Wir bieten den kompletten Fahrzeug-Rundum-Service!</p>-->
                 </div>
@@ -69,7 +69,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
-            <div class="footer-brand">Auto-Starck</div>
+            <div class="footer-brand">{{companyService.companyData?.name}}</div>
             <div class="mb-3">Deine Autowerkstatt in Hofheim!</div>
             <div class="icon-list-social mb-5">
               <a class="icon-list-social-link" href="javascript:void(0);"><i class="fab fa-instagram"></i></a><a class="icon-list-social-link" href="javascript:void(0);"><i class="fab fa-facebook"></i></a><a class="icon-list-social-link" href="javascript:void(0);"><i class="fab fa-github"></i></a><a class="icon-list-social-link" href="javascript:void(0);"><i class="fab fa-twitter"></i></a>
@@ -82,7 +82,7 @@
                   <div class="text-uppercase-expanded text-xs mb-4">Standort <i class="fa fa-location-arrow"></i></div>
                   <iframe class="col-12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2559.857484732556!2d8.432668815845657!3d50.088955079427045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bda3ce120781fd%3A0x4ef45a0725f694af!2sLorsbacher%20Str.%2013%2C%2065719%20Hofheim%20am%20Taunus!5e0!3m2!1sde!2sde!4v1604269201406!5m2!1sde!2sde" frameborder="0" style="border:0;min-height:100px;padding:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                   <div class="mb-0">
-                    <span><b>Auto-Starck</b></span>
+                    <span><b>{{companyService.companyData?.name}}</b></span>
                   </div>
                   <div class="mb-0">
                     <span>Lorsbacher Str. 13</span>
@@ -183,7 +183,7 @@
         </div>
         <hr class="my-5" />
         <div class="row align-items-center">
-          <div class="col-md-6 small">Copyright &copy; Auto-Starck 2020</div>
+          <div class="col-md-6 small">Copyright &copy; {{companyService.companyData?.name}} 2020</div>
           <div class="col-md-6 text-md-right small">
             <a href="javascript:void(0);">Privacy Policy</a>
             &middot;

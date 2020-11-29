@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
 import * as feather from 'feather-icons';
 import * as $ from 'jquery';
-
+import {CompanyService} from './company.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +10,11 @@ import * as $ from 'jquery';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'home';
+  companyName = 'home';
+
+  constructor(
+    public companyService: CompanyService
+  ) {}
 
   ngOnInit(): void{
     AOS.init(
@@ -23,5 +27,13 @@ export class AppComponent implements OnInit {
     );
     window.addEventListener('load', AOS.refresh);
     feather.replace();
+
+    this.companyService.getCompanyData().subscribe(data => {
+      console.warn(data);
+      this.companyService.companyData = data;
+      console.warn(this.companyService.companyData);
+    });
+
   }
+
 }
